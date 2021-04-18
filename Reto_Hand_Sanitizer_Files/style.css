@@ -1,0 +1,97 @@
+:root{
+    --main-bg-color: #1A4341;
+    --color-top: #F3AC3C;
+    --color-bottom: #998235;
+}
+body{
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main-content{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 16px 20px 16px 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: 
+    '. . a a a a a a a'
+    '. . . . b . . . f'
+    '. . . c c c . . g'
+    '. . d d d d d . h'
+    '. . d d d d d . .'
+    '. . d d d d d . .'
+    '. . e e e e e . .';
+}
+.top-a{
+    grid-area: a;
+    background-color: var(--color-top);
+    border-radius: 50px 50px 0px 50px;
+}
+.top-b{
+    grid-area: b;
+    background-color: var(--color-top);
+}
+.top-c{
+    grid-area: c;
+    background-color: var(--color-top);
+    border-radius: 10px 10px 0px 0px;
+}
+.top-d{
+    grid-area: d;
+    background-color: var(--color-top);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: flex-end; 
+}
+.top-d .circle{
+    width: 52px;
+    height: 52px;
+    background-color: var(--color-top);
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    top: 32px;
+}
+.bottom-e{
+    grid-area: e;
+    background-color: var(--color-bottom);
+    border-radius: 0px 0px 20px 20px;
+}
+.bottom-e .circle{
+    width: 51px;
+    height: 51px;
+    background-color: var(--color-bottom);
+    border-radius: 50px 50px 0px 0px;
+    position: relative;
+    top:-32px; 
+}
+.top-f{
+    grid-area: f;
+    background-color: var(--color-top);
+    border-radius: 0px 0px 50px 50px;
+}
+.gota-g{
+    grid-area: g;
+    background-color: var(--color-bottom);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;  
+    position: relative;
+    top: 10px;
+}
+.gota-h{
+    grid-area: h;
+    background-color: var(--color-bottom);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin: 0 auto;  
+    position: relative;
+    top: 20px;
+}
