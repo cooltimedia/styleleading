@@ -1,0 +1,50 @@
+:root{
+    --main-bg-color: #191919;
+    --main-line-color: #5DBCF9;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    widows: 100vw;
+    background-color: var(--main-bg-color);
+}
+.main-container{
+    width: 188px;
+    height: 188px;
+    display: grid;
+    grid-template-rows: 69px 50px 69px;
+    grid-template-columns: 1fr 50px 1fr; 
+}
+.line-color{
+    border: 10px solid var(--main-line-color);
+}
+.box1{
+    border-radius: 100px 100px 0px 100px;
+}
+.box2{
+    border-bottom: 10px solid var(--main-line-color);
+}
+.box3{
+    border-radius: 100px 100px 100px 0px;
+}
+.box4{
+    border-right: 10px solid var(--main-line-color);
+}
+.box5{
+}
+.box6{
+    border-left: 10px solid var(--main-line-color);
+}
+.box7{
+    border-radius: 100px 0px 100px 100px;
+}
+.box8{
+    border-top: 10px solid var(--main-line-color);
+}
+.box9{
+    border-radius: 0px 100px 100px 100px;
+}
