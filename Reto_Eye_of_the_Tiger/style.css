@@ -1,0 +1,53 @@
+:root{
+    --main-bg-color: #0B2429;
+    --first-color: #998235;
+    --second-color: #F3AC3C;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.main-content{
+    height: 200px;
+    width: 285px;
+}
+.circle-a{
+    background-color: var(--first-color);
+    height: 200px;
+    width: 200px;
+    border-radius: 100px 0px 100px 0px;
+    transform: rotate(45deg);
+}
+.circle-b{
+    background-color: var(--main-bg-color);
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.circle-c{
+    background-color: var(--second-color);
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+.circle-d{
+    background-color: var(--main-bg-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+
