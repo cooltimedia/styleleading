@@ -1,0 +1,126 @@
+:root{
+    --main-bg-color: #F9E492;
+    --main-color: #191919;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.main-content{
+    width: 130px;
+    height: 145px;
+    display: grid;
+    grid-template-columns: 10px 10px 24px 24px 24px 24px 14px;
+    grid-template-rows: 55px 45px 45px;
+    grid-template-areas: 
+    "d . a a a a ."
+    "d . b b b b ."
+    ". . . c c . .";
+}
+.flex{
+    display: flex;
+}
+.align-items-bottom{
+    align-items: flex-end;
+}
+.element-a {
+    grid-area: a;
+    justify-content: space-between;
+}
+.element-a .item:nth-child(1){
+    width: 20px;
+    height: 78%;
+    border-radius: 50px;
+    background-color: var(--main-color);
+}
+.element-a .item:nth-child(2){
+    width: 20px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--main-color);    
+}
+.element-a .item:nth-child(3){
+    width: 20px;
+    height: 78%;
+    border-radius: 50px;
+    background-color: var(--main-color);    
+}
+.element-a .item:nth-child(4){
+    width: 20px;
+    height: 64%;
+    border-radius: 50px;
+    background-color: var(--main-color);    
+}
+.element-b{
+    grid-area: b;
+    background-color: var(--main-color);
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 5px;
+}
+.element-c{
+    grid-area: c;
+    background-color: var(--main-color);
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    left: -5px;
+    width: 51px;
+}
+.element-d{
+    grid-area: d;
+}
+.element-d .item{
+    width: 18px;
+    height: 60px;
+    border: 5px solid var(--main-bg-color);
+    border-radius: 50px;
+    background-color: var(--main-color);
+    position: relative;
+    top: -30px;
+    transform: rotate(60deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
