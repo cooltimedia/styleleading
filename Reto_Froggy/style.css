@@ -1,0 +1,158 @@
+:root{
+    --main-bg-color: #293462;
+    --froggy-top-color: #FE5F55;
+    --froggy-bottom-color: #A64942;
+    --froggy-eyes-color: #FFF1C1;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-bg-color);
+}
+.main-content{
+    width: 150px;
+    height: 150px;  
+}
+.rostro{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    background-color: var(--froggy-bottom-color);
+    border-radius: 100px 100px 90px 90px;
+    position: relative;
+    top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.sombra{
+    width: 150px;
+    height: 80px;
+    background-color: var(--froggy-top-color);
+    border-radius: 100px / 25px;
+    position: relative;
+    top: -10px;
+}
+.ojos{
+    position: absolute;
+}
+.ojo-izq{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--froggy-top-color);
+    position: absolute;
+    top: -87px;
+    left: 15px;
+}
+.ojo-izq .esclerotica{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--froggy-eyes-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ojo-izq .iris{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ojo-der{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--froggy-top-color);
+    position: absolute;
+    top: -87px;
+    left: 85px;
+}
+.ojo-der .esclerotica{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--froggy-eyes-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ojo-der .iris{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.nariz{
+    position: relative;
+    top: -22px;
+    left: 50px;
+}
+.fosa-nasal:nth-child(1){
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.fosa-nasal:nth-child(2){
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
