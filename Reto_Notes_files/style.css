@@ -1,0 +1,165 @@
+:root{
+    --main-bg-color: #191919;
+    --red: #FE5F55;
+    --dark-red: #A64942;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+.main-content{
+    width: 400px;
+    height: 300px;
+}
+.e1{
+    position: absolute;
+    top: 165px;
+    left: 60px;
+}
+.e1-1{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--red);
+    transform: rotate(90deg);
+}
+.e1-2{
+    width: 10px;
+    height: 110px;
+    background-color: var(--red);
+    position: relative;
+    top: -125px;
+    left: 35px;
+    border-radius: 0px 0px 100px 0px;
+}
+.e1-3{
+    width: 40px;
+    height: 10px;
+    background-color: var(--red);
+    position: relative;
+    top: -235px;
+    left: 35px;
+}
+/*e2*/
+.e2{
+    position: absolute;
+    top: 165px;
+    left: 130px;
+}
+.e2-1{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--red);
+    transform: rotate(90deg);
+}
+.e2-2{
+    width: 10px;
+    height: 110px;
+    background-color: var(--red);
+    position: relative;
+    top: -125px;
+    left: 35px;
+    border-radius: 0px 0px 100px 0px;
+}
+.e2-3{
+    width: 40px;
+    height: 10px;
+    background-color: var(--red);
+    position: relative;
+    top: -235px;
+    left: 0px;
+}
+/*e3*/
+.e3{
+    position: absolute;
+    top: 165px;
+    left: 200px;
+}
+.e3-1{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark-red);
+    transform: rotate(90deg);
+}
+.e3-2{
+    width: 10px;
+    height: 110px;
+    background-color: var(--dark-red);
+    position: relative;
+    top: -125px;
+    left: 35px;
+    border-radius: 0px 0px 100px 0px;
+}
+.e3-3{
+    width: 40px;
+    height: 10px;
+    background-color: var(--dark-red);
+    position: relative;
+    top: -235px;
+    left: 35px;
+}
+/*e4*/
+.e4{
+    position: absolute;
+    top: 165px;
+    left: 270px;
+}
+.e4-1{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--red);
+    transform: rotate(90deg);
+}
+.e4-2{
+    width: 10px;
+    height: 110px;
+    background-color: var(--red);
+    position: relative;
+    top: -125px;
+    left: 35px;
+    border-radius: 0px 0px 100px 0px;
+}
+.e4-3{
+    width: 40px;
+    height: 10px;
+    background-color: var(--red);
+    position: relative;
+    top: -235px;
+    left: 35px;
+}
+.e4-4{
+    width: 40px;
+    height: 10px;
+    background-color: var(--red);
+    position: relative;
+    top: -225px;
+    left: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
