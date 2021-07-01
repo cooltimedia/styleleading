@@ -1,0 +1,258 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
+/*Global*/
+body, h2, ul,figure,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #676666;
+}
+li{
+    list-style: none;
+}
+.slide-cover h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+/*Header*/
+.header-section{
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 50px;
+    height: 100vh;
+    grid-template-areas: 
+    "logo logo logo menu menu"
+    "social slide slide slide slide"
+    "social slide slide slide slide"
+    "social slide slide slide slide"
+    "footer footer footer footer footer";
+}
+.header-section-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-section-logo figure img{
+    width: 200px;
+}
+/*Social Styles*/
+.header-section-social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.header-section-social p{
+    transform: rotate(90deg);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/*Slide Styles*/
+.header-section-slide{
+    grid-area: slide;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
+    "slide1 slide2 slide3 slide4"; 
+}
+/*Slide1 Styles*/
+.header-section-slide-item:nth-of-type(1){
+    grid-area: slide1;
+    background-image: url("../images/slide_1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-section-slide-item:nth-of-type(1) .slide-cover{
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #025E73;
+}
+.header-section-slide-item:nth-of-type(1) .slide-cover:hover{
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+/*Slide2 Styles*/
+.header-section-slide-item:nth-of-type(2){
+    grid-area: slide2;
+    background-image: url("../images/slide_2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.header-section-slide-item:nth-of-type(2) .slide-cover{
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #147369;
+}
+.header-section-slide-item:nth-of-type(2) .slide-cover:hover{
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+/*Slide3 Styles*/
+.header-section-slide-item:nth-of-type(3){
+    grid-area: slide3;
+    background-image: url("../images/slide_3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.header-section-slide-item:nth-of-type(3) .slide-cover{
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #BF471B;
+}
+.header-section-slide-item:nth-of-type(3) .slide-cover:hover{
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+/*Slide4 Styles*/
+.header-section-slide-item:nth-of-type(4){
+    grid-area: slide4;
+    background-image: url("../images/slide_4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.header-section-slide-item:nth-of-type(4) .slide-cover{
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #A61103;
+}
+.header-section-slide-item:nth-of-type(4) .slide-cover:hover{
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.header-section-bottom{
+    grid-area: footer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.blog{
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 35px 1fr;
+    grid-template-areas: 
+    "blogmaintitle blogmaintitle blogmaintitle"
+    "blogmainsubtitle blogmainsubtitle blogmainsubtitle"
+    "blog blog blog"  
+}
+/*Blog Main Title Styles*/
+.blog h2{
+    grid-area: blogmaintitle;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;   
+}
+.blog h6{
+    grid-area: blogmainsubtitle;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;   
+}
+/*Blog Items Styles*/
+.blog-item{
+    display: inline-block;
+    padding: 15px;
+}
+.blog-item figure img{
+    display: inline-block;
+    width: 100%;
+}
+.blog-item h2{ 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center; 
+}
+.blog-item p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0px 10px;
+    display: inline-block;
+    text-align: justify; 
+}
+/*Animations*/
+/*Media Queries*/
+@media screen and (max-width:1024px){
+    .header-section-slide{
+        grid-area: slide;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "slide1 slide2"
+        "slide3 slide4"; 
+    }    
+    .blog{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 35px 1fr;
+        grid-template-areas: 
+        "blogmaintitle blogmaintitle"
+        "blogmainsubtitle blogmainsubtitle"
+        "blog blog";
+    }
+}
+@media screen and (max-width:768px){
+    .header-section-slide{
+        grid-area: slide;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "slide1"
+        "slide2"
+        "slide3"
+        "slide4"; 
+    }
+    .blog{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 50px 1fr;
+        grid-template-areas: 
+        "blogmaintitle"
+        "blogmainsubtitle"
+        "blog";
+    }       
+}
+@media screen and (max-width:480px){}
+@media screen and (max-width:320px){}
+
