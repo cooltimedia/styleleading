@@ -1,0 +1,59 @@
+:root{
+    --main-bg: #998235;
+    --color-white: #FFFFFF;
+    --color-yellow: #EFF33C;
+    --color-darkgray: #191919;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--main-bg);
+}
+.bee {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "wing ."
+    "body body";
+}
+.wing {
+    background: var(--color-white);
+    border-radius: 50%;
+    grid-area: wing;
+    border-bottom-right-radius: 0;
+    -webkit-box-reflect: right;
+}
+.body {
+    grid-area: body;
+    position: relative;
+    border-radius: 75px;
+    background-image: linear-gradient(
+        to right,
+        var(--color-darkgray) 0,
+        var(--color-darkgray) 25px,
+        var(--color-yellow) 25px,
+        var(--color-yellow) 35px,
+        var(--color-darkgray) 35px,
+        var(--color-darkgray) 60px,
+        var(--color-yellow) 60px,
+        var(--color-yellow) 70px,
+        var(--color-darkgray) 70px,
+        var(--color-darkgray) 95px,
+        var(--color-yellow) 95px,
+        var(--color-yellow) 100%
+    );
+}
+.body:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--color-darkgray);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
